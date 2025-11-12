@@ -1,7 +1,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: border-box; /* общая ширина и высота */
 }
 
 html {
@@ -12,7 +12,7 @@ html {
   display: flex;
   inline-size: 1200px;
   block-size: 100%;
-  margin: auto;
+  margin: auto; /* центрирует блок по горизонтали */
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
@@ -57,7 +57,7 @@ ol {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  line-height: 94%;
+  line-height: 94%; /* межстрочный интервал */
   font-size: 75px;
 }
 
@@ -76,7 +76,7 @@ ol {
 .content__list-container {
   position: relative;
   overflow-y: auto;
-  block-size: 298px;
+  block-size: 298px; /* фиксированная высота */
 }
 
 .content__list:nth-child(n) {
@@ -96,10 +96,10 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  flex-shrink: 0;
+  flex-shrink: 0; /* запрещает элементу сжиматься */
   height: 103px;
   width: 194px;
-  object-fit: contain;
+  object-fit: contain; /* маштабирование и сохранение прапорций */
   object-position: right;
 }
 
@@ -130,7 +130,7 @@ ol {
   font-weight: 400;
   line-height: 16.2px;
   /* Свойства чтобы заменялось на "..." */
-  line-clamp: 4;
+  line-clamp: 4; /* первые 4 строки текста */
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -171,7 +171,7 @@ ol {
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
-  clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0); /* скрытие элемента*/
   clip-path: inset(50%);
   white-space: nowrap;
   block-size: 1px;
@@ -186,7 +186,7 @@ ol {
 .result__video {
   height: 386px;
   width: 711px;
-  object-fit: cover;
+  object-fit: cover; /*заполнение всего контейнера при сохраненных прапорциях */
   object-position: center;
   inline-size: 100%;
   block-size: 100%;
@@ -234,7 +234,7 @@ ol {
   border-left: 0;
   background-color: transparent;
   inline-size: 225px;
-  appearance: none;
+  appearance: none; /* удаление системных стилей*/
 }
 
 .search-form__textfield:focus {
