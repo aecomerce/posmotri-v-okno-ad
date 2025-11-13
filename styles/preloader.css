@@ -1,6 +1,6 @@
 .preloader {
   position: absolute;
-  inset: 0; /* растягивает элемент на все площадь родителя*/
+  inset: 0;    /* растягивает элемент на все площадь родителя*/
   display: flex;
   justify-content: center;
   align-items: center;
