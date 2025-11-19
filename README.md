@@ -14,4 +14,5 @@ https://github.com/aecomerce/posmotri-v-okno-ad
 
 - HTML5
 - CSS3
+- JavaScript
 
